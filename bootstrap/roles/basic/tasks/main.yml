@@ -1,0 +1,15 @@
+---
+
+# Set timezone
+
+- name: Set timezone
+  timezone:
+    name: Europe/Rome
+
+# Install tcpdump for troubleshooting network traffic
+- name: Install tcpdump
+  yum:
+    name: tcpdump
+    state: latest
+
+
