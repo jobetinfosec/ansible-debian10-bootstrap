@@ -5,6 +5,8 @@
 
 Initial setup of Debian 10 server.
 
+## Roles
+
 **First role (sudo_user)**
 
 * System update
