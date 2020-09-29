@@ -15,7 +15,7 @@ Initial setup of Debian 10 server.
 
 * Set timezone
 * Install tcpdump
-
+* SSH hardening (custom port, disable IPv6 port, disable root login, disable password login and disable no password login)
 
 ## Tested on
 
@@ -135,6 +135,7 @@ p) Replace <TEMPORARY_ITEMS> with your own data:
 `<USER_NAME>`		replace <USER_NAME> with the name of sudo user<br />
 `<PASSWORD_HASH>`	replace it with the hash of sudo user's password (already created during first role "sudo_user")<br />
 `<PUBLIC_KEY_NAME>`	replace it with your public key's name
+`<CUSTOM_SSH_PORT>`	replace it with your custom ssh port<br />
 
 then save and close the file
 
@@ -164,3 +165,9 @@ ansible-playbook debian_bootstrap.yml
 ## Licence
 
 MIT licence
+
+## Author Information
+
+Created by Roberto Jobet (sysadmin@wpsecurity.press).
+
+Don't hesitate to open an Issue if you find any bug or have suggestions.

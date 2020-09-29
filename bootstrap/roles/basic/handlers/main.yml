@@ -1,10 +1,4 @@
 ---
-- name: start chrony
-  systemd:
-    name: chronyd
-    state: started
-    enabled: yes
-
 - name: restart sshd
   systemd:
     name: sshd
