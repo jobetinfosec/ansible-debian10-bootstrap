@@ -9,8 +9,15 @@
 # Install tcpdump to troubleshoot network traffic
 
 - name: Install tcpdump
-  yum:
+  apt:
     name: tcpdump
+    state: latest
+
+# Install glances for server monitoring
+
+- name: Install Glances
+  apt:
+    name: glances
     state: latest
 
 # SSH hardening
